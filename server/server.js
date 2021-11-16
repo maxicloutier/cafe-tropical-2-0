@@ -3,7 +3,13 @@
 // Import the needed node_modules
 const express = require("express");
 const morgan = require("morgan");
-const {} = require("./handlers");
+const {
+	getCustomerInfo,
+	getMenuItems,
+	getOrders,
+	addNewCustomer,
+	addNewOrder,
+} = require("./handlers");
 
 const app = express()
 	// Below are methods that are included in express(). We chain them for convenience.
@@ -11,11 +17,17 @@ const app = express()
 
 	// This will give us will log more info to the console. see https://www.npmjs.com/package/morgan
 	.use(morgan("tiny"))
-	.use(express.json());
+	.use(express.json())
 
-// Nothing to modify above this line
-// ---------------------------------
-// Endpoints 👇
+	// Nothing to modify above this line
+	// ---------------------------------
+	// Endpoints 👇
+
+	.get("/customers", getCustomerInfo)
+	.get("/menu", getMenuItems)
+	.get("/orders", getOrders)
+	.post("/customers", addNewCustomer)
+	.post("/orders", addNewOrder);
 
 // Endpoints 👆
 // ---------------------------------

@@ -1,24 +1,30 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import GlobalStyle from "./GlobalStyle";
+import styled from "styled-components";
+import Header from "./Header";
+import Menu from "./Menu";
+import PastOrders from "./PastOrders";
+import NewOrder from "./NewOrder";
+import Customers from "./Customers";
+import NewCustomer from "./NewCustomer";
 
-function App() {
+const App = () => {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer">
-					Learn React
-				</a>
-			</header>
-		</div>
+		<Router>
+			<Fragment>
+				<GlobalStyle />
+				<Header />
+				<Routes>
+					<Route exact path="/" element={<Menu />} />
+					<Route path="/pastorders" element={<PastOrders />} />
+					<Route exact path="/neworder" element={<NewOrder />} />
+					<Route exact path="/customers" element={<Customers />} />
+					<Route exact path="/newcustomer" element={<NewCustomer />} />
+				</Routes>
+			</Fragment>
+		</Router>
 	);
-}
+};
 
 export default App;

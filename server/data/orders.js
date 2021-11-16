@@ -1,7 +1,5 @@
 const orders = [
 	{
-		customerId: "25fd161f-d4fd-4c12-ab60-7022189e44ac",
-		customerName: "Moira",
 		hour: "November 11th 2021, 12:30 pm",
 		items: ["Chicken breast", "Champagne"],
 		tone: "excited",
@@ -11,8 +9,6 @@ const orders = [
 		feedback: "Exquisite dear!",
 	},
 	{
-		customerId: "4efb18ba-040e-4fd1-b539-462ffb856676",
-		customerName: "Jocelyn",
 		hour: "November 9th 2021, 5:34 pm",
 		items: ["Fried chicken", "Wine", "Apple pie"],
 		tone: "pregnant",
@@ -22,8 +18,6 @@ const orders = [
 		feedback: "That apple pie was heaven!",
 	},
 	{
-		customerId: "f146a5e9-fc14-4de1-9ed0-931eeb77fdd0",
-		customerName: "David",
 		hour: "November 5th 2021, 7:23 pm",
 		items: ["Ribs", "Vodka soda", "Meat loaf", "Negroni"],
 		tone: "moody",
@@ -33,8 +27,6 @@ const orders = [
 		feedback: "Food is better in New York.",
 	},
 	{
-		customerId: "3202a14b-566e-46c8-8392-9e149bf11d89",
-		customerName: "Ted",
 		hour: "November 3rd 2021, 10:30 am",
 		items: ["Bacon and cheese omelette", "Protein shake", "Pancakes", "Mimosa"],
 		tone: "happy",
@@ -44,8 +36,6 @@ const orders = [
 		feedback: "Thanks Twyla we'll come back!",
 	},
 	{
-		customerId: "4d070069-0a42-4ed9-8d30-6f352ee3b704",
-		customerName: "Johnny",
 		hour: "November 2nd 2021, 6:12 pm",
 		items: ["Fish and chips", "Scotch"],
 		tone: "overwhelmed",
@@ -55,8 +45,6 @@ const orders = [
 		feedback: "I should have had one more scotch.",
 	},
 	{
-		customerId: "be775fed-6267-4da4-920f-4c6f858f86e8",
-		customerName: "Ronnie",
 		hour: "November 10th 2021, 3:25 pm",
 		items: ["Coffee"],
 		tone: "bored",
@@ -66,8 +54,6 @@ const orders = [
 		feedback: "This coffee tasted like piss.",
 	},
 	{
-		customerId: "d20ccb0d-d7d7-40a0-aa16-aa4109d79705",
-		customerName: "Javier",
 		hour: "November 8th 2021, 11:57 am",
 		items: ["Bloody mary", "Toasted reubens"],
 		tone: "happy",
@@ -77,8 +63,6 @@ const orders = [
 		feedback: "I'll come back if I'm ever in town again!",
 	},
 	{
-		customerId: "e68bafaf-640e-42cc-b220-9d00f703247b",
-		customerName: "Stevie",
 		hour: "November 7th 2021, 12:57 pm",
 		items: ["Club sandwich", "Beer", "Chocolate cake"],
 		tone: "bored",
@@ -88,8 +72,6 @@ const orders = [
 		feedback: "I'd rather keep drinking that go back to work at the motel.",
 	},
 	{
-		customerId: "c15f72e6-4110-49d5-aaf4-3619fd7b554d",
-		customerName: "Roland",
 		hour: "November 6th 2021, 6:45 pm",
 		items: ["Hamburger", "Onion rings", "Beer", "Beer", "Beer", "Beer"],
 		tone: "angry",
@@ -99,8 +81,6 @@ const orders = [
 		feedback: "AnOtHeR bEeR Tweela don't tell Jocelyn 🥴",
 	},
 	{
-		customerId: "41c7e241-4ea4-4b3b-a0b9-8578d9ba7d84",
-		customerName: "Bob",
 		hour: "November 4th 2021, 7:06 pm",
 		items: [
 			"Grilled cheese",
